@@ -15,7 +15,7 @@
 
 module.exports = function (db, cb) {
 
-    var QueueMonitor = db.define('queuemonitor', {
+    db.define('queuemonitor', {
 
             channelname : {type: 'text', 'required': true},
             createdby : String,
@@ -30,14 +30,14 @@ module.exports = function (db, cb) {
 
         });
 
-    var Affiliate = db.define('affiliate', {
+    db.define('affiliate', {
 
             code : {type: 'text', 'required': true},
             description : {type: 'text', 'required': true},
             lang : {type: 'text', 'required': true, 'defaultValue': 'ENG'}
         });
 
-    var Alert = db.define('alert', {
+    db.define('alert', {
 
             affiliatecode : {type: 'text', 'required': true},
             createdby : String,
@@ -50,7 +50,7 @@ module.exports = function (db, cb) {
             qmname : {type: 'text', 'required': true}
         });
 
-    var User = db.define('user', {
+    db.define('user', {
 
             username : {type: 'text', 'required': true},
             affiliate : {type: 'text', 'required': true, 'defaultValue' : 'EPI'},

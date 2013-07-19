@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Queue Monitor</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css" />
+                <link rel="stylesheet" href="stylesheets/datepicker.css" />
+		<link rel="stylesheet" href="stylesheets/uniform.css" />
+		<link rel="stylesheet" href="stylesheets/select2.css" />
+		<link rel="stylesheet" href="stylesheets/unicorn.main.css" />
+		<link rel="stylesheet" href="stylesheets/unicorn.grey.css" class="skin-color" />
+	</head>
+  
+	<body>
+		
+		
+		<div id="header">
+		  <h1><a href="/">Queue Monitor</a></h1>		
+		</div>
+		
+		<div id="search">
+			<input type="text" placeholder="Search here..."/><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+              <li class="btn btn-inverse"><a title="" href="/login"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+			<a href="#" class="visible-phone"><i class="icon icon-th-list"></i> Settings</a>
+			<ul>
+				<li><a href="#"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>Settings</span> <span class="label">3</span></a>
+					<ul>
+						<li><a href="/queue_monitor">Add Queue Monitor</a></li>
+						<li><a href="/alert">Alert Settings</a></li>
+						<li><a href="/affiliate">Affiliate Settings</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		
+		</div>
+		<div id="content">
+			
+			<div id="breadcrumb">
+				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+				<a href="#" class="current">Dashboard</a>
+		  </div>
+			<div class="container-fluid">
+			  <div class="row-fluid">
+			    <div class="span12">
+				  <div class="alert alert-info">
+							Welcome <strong>Sysadmin</strong>. Select queues from any of the windows below to view status!
+							<a href="#" data-dismiss="alert" class="close">�</a>
+					  </div>
+			    </div>
+			  </div>
+				<div class="row-fluid">
+					<div class="span6">
+						<div class="widget-box">
+							
+							  <select name="select" style="width:100%">
+<option>Select Queue Monitor Name</option>
+<option>Ecobank Ghana Omniflow MQ</option>
+<option>The Very Second option</option>
+							    <option>The Very Third option</option>
+							    <option>The Very Fourth option</option>
+							    <option>The Very Fifth option</option>
+							    <option>The Very Sixth option</option>
+							    <option>The Very Seventh option</option>
+							    <option>The Very Eighth option</option>
+						      </select>
+						  
+
+							<div class="widget-content nopadding updates">
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<div class="update-done">										
+										<a title="" href="#"><strong>Omniflow-SM-queue</strong></a>
+										<span>Ecobank Ghana[ EGH ] SM queue</span>
+									</div>
+									<div class="update-date"><span class="update-day">08</span>pending</div>
+									
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-exclamation-sign"></i>
+									<span class="update-alert">										
+										<a title="" href="#"><strong>Omniflow-STP-queue</strong></a>
+										<span>Ecobank Ghana[ EGH ] STP queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">11</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<span class="update-done">										
+										<a title="" href="#"><strong>Omniflow-FT-queue</strong></a>
+										<span>Ecobank Ghana[ EGH ] FT queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">07</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-question-sign"></i>
+									<span class="update-notice">										
+										<a title="" href="#"><strong>Omniflow-AO-queue</strong></a>
+										<span>Ecobank Ghana[ EGH ] AO queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">06</span>pending</span>
+								</div>
+                                <div class="new-update clearfix">
+
+										<div class="buttons"><a href="#" class="btn btn-mini"><i class="icon-refresh"></i> Update stats</a></div>
+								
+								
+                                </div>
+						</div>
+				
+						</div>
+					</div>
+		<div class="span6">
+						<div class="widget-box">
+							
+							  <select name="select" style="width:100%">
+							    <option selected>Select Queue Monitor Name</option>
+							    <option>The Very First option</option>
+							    <option>The Very Second option</option>
+							    <option>The Very Third option</option>
+							    <option>The Very Fourth option</option>
+							    <option>The Very Fifth option</option>
+							    <option>The Very Sixth option</option>
+							    <option>The Very Seventh option</option>
+							    <option>The Very Eighth option</option>
+						      </select>
+						  
+
+							<div class="widget-content nopadding updates">
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<div class="update-done">										
+										<a title="" href="#"><strong>Omniflow-SM-queue</strong></a>
+										<span>Ecobank Kenya[ EKE ] SM queue</span>
+									</div>
+									<div class="update-date"><span class="update-day">06</span>pending</div>
+									
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-exclamation-sign"></i>
+									<span class="update-alert">										
+										<a title="" href="#"><strong>Omniflow-STP-queue</strong></a>
+										<span>Ecobank Kenya[ EKE ] STP queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">09</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<span class="update-done">										
+										<a title="" href="#"><strong>Omniflow-FT-queue</strong></a>
+										<span>Ecobank Kenya[ EKE ] FT queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">07</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-question-sign"></i>
+									<span class="update-notice">										
+										<a title="" href="#"><strong>Omniflow-AO-queue</strong></a>
+										<span>Ecobank Kenya[ EKE ] AO queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">02</span>pending</span>
+								</div>
+                                <div class="new-update clearfix">
+
+										<div class="buttons"><a href="#" class="btn btn-mini"><i class="icon-refresh"></i> Update stats</a></div>
+								
+								
+                                </div>
+						</div>
+				
+		  </div>
+					</div>
+				</div>
+							<div class="row-fluid">
+					<div class="span6">
+						<div class="widget-box">
+							
+							  <select name="select" style="width:100%">
+							    <option>Select Queue Monitor Name</option>
+							    <option>The Very First option</option>
+							    <option>The Very Second option</option>
+							    <option>The Very Third option</option>
+							    <option>The Very Fourth option</option>
+							    <option>The Very Fifth option</option>
+							    <option>The Very Sixth option</option>
+							    <option>The Very Seventh option</option>
+							    <option>The Very Eighth option</option>
+						      </select>
+						  
+
+							<div class="widget-content nopadding updates">
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<div class="update-done">										
+										<a title="" href="#"><strong>Omniflow-SM-queue</strong></a>
+										<span>Ecobank Malawi[ EMW ] SM queue</span>
+									</div>
+									<div class="update-date"><span class="update-day">01</span>pending</div>
+									
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-exclamation-sign"></i>
+									<span class="update-alert">										
+										<a title="" href="#"><strong>Omniflow-STP-queue</strong></a>
+										<span>Ecobank Malawi[ EMW ] STP queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">13</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<span class="update-done">										
+										<a title="" href="#"><strong>Omniflow-FT-queue</strong></a>
+										<span>Ecobank Malawi[ EMW ] FT queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">03</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-question-sign"></i>
+									<span class="update-notice">										
+										<a title="" href="#"><strong>Omniflow-AO-queue</strong></a>
+										<span>Ecobank Malawi[ EMW ] AO queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">05</span>pending</span>
+								</div>
+                                <div class="new-update clearfix">
+
+										<div class="buttons"><a href="#" class="btn btn-mini"><i class="icon-refresh"></i> Update stats</a></div>
+								
+								
+                                </div>
+						</div>
+				
+					  </div>
+					</div>
+		<div class="span6">
+						<div class="widget-box">
+							
+							  <select name="select" style="width:100%">
+							    <option selected>Select Queue Monitor Name</option>
+							    <option>The Very First option</option>
+							    <option>The Very Second option</option>
+							    <option>The Very Third option</option>
+							    <option>The Very Fourth option</option>
+							    <option>The Very Fifth option</option>
+							    <option>The Very Sixth option</option>
+							    <option>The Very Seventh option</option>
+							    <option>The Very Eighth option</option>
+						      </select>
+						  
+
+							<div class="widget-content nopadding updates">
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<div class="update-done">										
+										<a title="" href="#"><strong>Omniflow-SM-queue</strong></a>
+										<span>Ecobank Tanzania[ ETZ ] SM queue</span>
+									</div>
+									<div class="update-date"><span class="update-day">02</span>pending</div>
+									
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-exclamation-sign"></i>
+									<span class="update-alert">										
+										<a title="" href="#"><strong>Omniflow-STP-queue</strong></a>
+										<span>Ecobank Tanzania[ ETZ ] STP queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">04</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-ok-sign"></i>
+									<span class="update-done">										
+										<a title="" href="#"><strong>Omniflow-FT-queue</strong></a>
+										<span>Ecobank Tanzania[ ETZ ] FT queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">06</span>pending</span>
+								</div>
+								
+								<div class="new-update clearfix">
+									<i class="icon-question-sign"></i>
+									<span class="update-notice">										
+										<a title="" href="#"><strong>Omniflow-AO-queue</strong></a>
+										<span>Ecobank Tanzania[ ETZ ] AO queue</span>
+									</span>
+									<span class="update-date"><span class="update-day">05</span>pending</span>
+								</div>
+                                <div class="new-update clearfix">
+
+										<div class="buttons"><a href="#" class="btn btn-mini"><i class="icon-refresh"></i> Update stats</a></div>
+								
+								
+                                </div>
+						</div>
+				
+		  </div>
+					</div>
+				</div>
+			
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+					2013 &copy; Queue Monitor. All Rights Reserved to eProcess S.A</div>
+				</div>
+			</div>
+	</div>
+		
+		
+            
+            <script src="javascripts/jquery.min.js"></script>
+            <script src="javascripts/jquery.ui.custom.js"></script>
+            <script src="javascripts/bootstrap.min.js"></script>
+            <script src="javascripts/jquery.uniform.js"></script>
+            <script src="javascripts/select2.min.js"></script>
+            <script src="javascripts/jquery.dataTables.min.js"></script>
+            <script src="javascripts/unicorn.js"></script>
+            <script src="javascripts/unicorn.tables.js"></script>
+	</body>
+</html>

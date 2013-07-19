@@ -11,6 +11,9 @@ var expressValidator = require('express-validator');
 
 exports.addAffDetails = function(req, res){
   //post method for adding new Affiliate
+  //this.affValidate(req);
+
+
 
 
 };
@@ -33,18 +36,10 @@ affValidate = function(req){
 
     var errors = req.validationErrors();
     if( !errors){   //No errors were found.  Passed Validation!
-        res.render('index', {
-            title: 'Affiliate Validated',
-            message: 'Passed Validation!',
-            errors: {}
-        });
+        return true;
 
     }
     else {   //Display errors to user
-        res.render('index', {
-            title: 'Form Validation Example',
-            message: '',
-            errors: errors
-        });
+        return false;
     }
-}
+};

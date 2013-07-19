@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Queue Monitor</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="stylesheets/colorpicker.css" />
+        <link rel="stylesheet" href="stylesheets/datepicker.css" />
+		<link rel="stylesheet" href="stylesheets/uniform.css" />
+		<link rel="stylesheet" href="stylesheets/select2.css" />		
+		<link rel="stylesheet" href="stylesheets/unicorn.main.css" />
+		<link rel="stylesheet" href="stylesheets/unicorn.grey.css" class="skin-color" />
+	
+	</head>
+	<body>
+		
+		
+		<div id="header">
+		  <h1><a href="/">Queue Monitor</a></h1>		
+		</div>
+		
+		<div id="search">
+			<input type="text" placeholder="Search here..."/><button type="submit" class="tip-right" title="Search"><i class="icon-search icon-white"></i></button>
+		</div>
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group">
+                
+                
+                
+                <li class="btn btn-inverse"><a title="" href="/login"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+            </ul>
+        </div>
+            
+		<div id="sidebar">
+			<a href="/" class="visible-phone"><i class="icon icon-th-list"></i> Settings</a>
+			<ul>
+				<li><a href="/"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
+				<li class="submenu active open">
+					<a href="#"><i class="icon icon-th-list"></i> <span>Settings</span> <span class="label">3</span></a>
+					<ul>
+						<li class="active"><a href="/queue_monitor">Add Queue Monitor</a></li>
+						<li><a href="/alert">Alert Settings</a></li>
+					<li><a href="/affiliate">Affiliate Settings</a></li>	
+					</ul>
+				</li>
+
+			</ul>
+		
+		</div>
+		
+		<div id="content">
+			<div id="content-header">
+				<h1>Add Queue Monitor</h1>
+				
+			</div>
+			<div id="breadcrumb">
+				<a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+				<a href="#" class="tip-bottom">Settings</a>
+				<a href="#" class="current">Add Queue Monitor</a>
+			</div>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="widget-box">
+							<div class="widget-title">
+								<span class="icon">
+									<i class="icon-pencil"></i>
+								</span>
+								<h5>Add/Modify</h5>
+							</div>
+							<div class="widget-content nopadding">
+								<form id="form-wizard" class="form-horizontal" method="post">
+									<div id="form-wizard-1" class="step">
+										<div class="control-group">
+											<label class="control-label">Affiliate</label>
+											<div class="controls">
+												<select name="affiliate" id="affiliate" style="width:82%">
+												  <option selected>Select one...</option>
+												<option>Second option</option>
+												<option>Third option</option>
+												<option>Fourth option</option>
+												<option>Fifth option</option>
+												<option>Sixth option</option>
+												<option>Seventh option</option>
+												<option>Eighth option</option>
+											</select>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">Queue Monitor Name</label>
+											<div class="controls">
+												<input name="qm_name" type="text" id="qm_name" />
+											</div>
+										</div>
+										
+										
+									</div>
+									<div id="form-wizard-2" class="step">
+                                    <div class="control-group">
+											<label class="control-label">Host IP</label>
+											<div class="controls">
+												<input name="host" type="text" id="host" />
+											</div>
+										</div>
+                                        
+										<div class="control-group">
+											<label class="control-label">Queue Name</label>
+											<div class="controls">
+												<input name="q_name" type="text" id="q_name" />
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">Channel</label>
+											<div class="controls">
+												<input name="channel" type="text" id="channel"/>
+											</div>
+										</div>
+                                        <div class="control-group">
+											<label class="control-label">Port</label>
+											<div class="controls">
+												<input name="port" type="text" id="port"/>
+											</div>
+										</div>
+									</div>
+                                    <div id="form-wizard-3" class="step">
+										<div class="control-group">
+											<label class="control-label">Time Interval</label>
+											<div class="controls">
+												<input name="time" type="text" id="time"/>Seconds
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label">Limit Count</label>
+											<div class="controls">
+												<input name="limit" type="text" id="limit"/>
+											</div>
+										</div>
+									</div>
+									<div class="form-actions">
+											<input id="back" class="btn btn-primary" type="reset" value="Back" />
+											<input id="next" class="btn btn-primary" type="submit" value="Next" />
+											<div id="status"></div>
+									</div>
+									<div id="submitted"></div>
+								</form>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="widget-box">
+							<div class="widget-title">
+								<span class="icon">
+								<i class="icon-th"></i>
+								</span>
+								<h5>Queue Monitor List</h5>
+							</div>
+							<div class="widget-content nopadding">
+								<table class="table table-bordered table-striped" id="table">
+									<thead>
+										<tr>
+											<th>Queue Monitor Name</th>
+											<th>Host IP</th>
+											<th>Queue Name</th>
+											<th>Channel</th>
+											<th>Port</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Row 1</td>
+											<td>Row 2</td>
+											<td>Row 3</td>
+											<td>Row 4</td>
+											<td>Row 5</td>
+										</tr>
+										<tr>
+											<td>Row 1</td>
+											<td>Row 2</td>
+											<td>Row 3</td>
+											<td>Row 4</td>
+											<td>Row 5</td>
+										</tr>
+										<tr>
+											<td>Row 1</td>
+											<td>Row 2</td>
+											<td>Row 3</td>
+											<td>Row 4</td>
+											<td>Row 5</td>
+										</tr>
+										<tr>
+											<td><div align="left" id="r4">data.name</div></td>
+											<td>Row 2</td>
+											<td>Row 3</td>
+											<td>Row 4</td>
+											<td>Row 5</td>
+										</tr>
+										<tr>
+											<td colspan="5"><p id="data"></p></td>
+										</tr>
+										
+									</tbody>
+								</table>							
+							</div>
+						</div>
+                        
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+					2013 &copy; Queue Monitor. All Rights Reserved to eProcess S.A</div>
+				</div>
+			</div>
+		</div>
+		
+		
+            
+            
+            <script src="javascripts/jquery.min.js"></script>
+            <script src="javascripts/jquery.form.js"></script>
+            <script src="javascripts/jquery.ui.custom.js"></script>
+            <script src="javascripts/bootstrap.min.js"></script>
+            <script src="javascripts/jquery.validate.js"></script>
+            <script src="javascripts/jquery.wizard.js"></script>
+            <script src="javascripts/unicorn.js"></script>
+            <script src="javascripts/unicorn.wizard.js"></script>
+            
+            <script src="javascripts/jquery.uniform.js"></script>
+            <script src="javascripts/select2.min.js"></script>
+            <script src="javascripts/unicorn.form_common.js"></script>
+            
+            
+         
+	</body>
+</html>

@@ -6,12 +6,17 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
-    ,queue_monitor = require('./routes/queue_monitor')
-    ,affiliate = require('./routes/affiliate')
+  , queue_monitor = require('./routes/queue_monitor')
+  , affiliate = require('./routes/affiliate')
+  , alert = require('./routes/alert')
   , http = require('http')
   , path = require('path')
   , orm = require('orm')
-  , expressValidator = require('express-validator');
+  , expressValidator = require('express-validator')
+  , QueueMonitor = null
+  , Affiliate = null
+  , Alert = null
+  , Users = null;
 
 
 var opts = {
@@ -57,10 +62,10 @@ db.on("connect", function (err, db) {
     console.log('Connected');
     db.load("./models/models", function (err) {
         // loaded!
-        var QueueMonitor = db.models.queuemonitor;
-        var Affiliate    = db.models.affiliate;
-        var Alert = db.models.alert;
-        var Users = db.models.user;
+        QueueMonitor = db.models.queuemonitor;
+        Affiliate    = db.models.affiliate;
+        Alert = db.models.alert;
+        Users = db.models.user;
 
         db.sync();
 
@@ -106,7 +111,18 @@ app.get('/alert', function (req, res)
 });
 
 
+app.get('/affiliate', function (req, res)
+{
+    res.render('affiliate.html');
+});
+
+
 app.post('/queue_monitor', queue_monitor.addQueueDetails);
+
+
+
+app.post('/alert', alert.addAlert);
+
 
 
 app.post('/affiliate',  affiliate.addAffDetails);
