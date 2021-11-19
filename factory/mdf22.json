@@ -1,0 +1,9 @@
+{
+	"name": "mdf22",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9513e716-6824-4a16-8034-c44632d8128d",
+		"tenantId": "0a6e66a4-2411-4667-8825-8f91f9c8b511"
+	}
+}
