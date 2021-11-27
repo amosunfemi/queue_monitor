@@ -1,0 +1,191 @@
+{
+	"name": "DestinationDataset_ng1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "CustomerKey",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "GeographyKey",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "CustomerAlternateKey",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Title",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "FirstName",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "MiddleName",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AddressLine1",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "AddressLine2",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Phone",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "DateFirstPurchase",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "CommuteDistance",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "FrenchEducation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "EnglishOccupation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SpanishOccupation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "FrenchOccupation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "HouseOwnerFlag",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "NumberCarsOwned",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "EmailAddress",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "YearlyIncome",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "TotalChildren",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "NumberChildrenAtHome",
+				"type": "tinyint",
+				"precision": 3,
+				"scale": 0
+			},
+			{
+				"name": "EnglishEducation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "SpanishEducation",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "LastName",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "NameStyle",
+				"type": "bit",
+				"precision": 1,
+				"scale": 0
+			},
+			{
+				"name": "BirthDate",
+				"type": "date",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "MaritalStatus",
+				"type": "nchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Suffix",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "Gender",
+				"type": "nvarchar",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DimCustomer"
+		}
+	}
+}
